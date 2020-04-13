@@ -1,0 +1,25 @@
+$primary-color: #6d10ff;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 45px;
+  background: #191a1d;
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
+  .nav__item {
+    color: #ababab;
+    font-size: 20px;
+    padding: 8px 16px;
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      border-bottom: 3px solid $primary-color;
+      color: white;
+    }
+  }
+}
