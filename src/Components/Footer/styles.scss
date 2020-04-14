@@ -1,19 +1,20 @@
 $bg-color: #191a1d;
 $secondary-color: #ababab;
+$purple: #7510f7;
 
-.container {
+.footer-container {
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: $bg-color;
     padding-bottom: 100px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
-    .main-box {
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+    .footer-main-box {
         min-width: 1200px;
         display: flex;
         margin: 0 80px 0 40px;
-        .main-box__left-side {
+        .footer-main-box__left-side {
             flex: 1 1 0px;
             // padding: 30px 80px 30px 30px;
             padding: 30px;
@@ -21,13 +22,13 @@ $secondary-color: #ababab;
 
             h1 {
                 color: white;
-                font-size: 3.5rem;
+                font-size: 3rem;
                 font-weight: 400;
             }
 
             h2 {
                 color: $secondary-color;
-                font-size: 2rem;
+                font-size: 1.85rem;
                 line-height: 140%;
                 font-weight: lighter;
 
@@ -37,16 +38,16 @@ $secondary-color: #ababab;
                 }
             }
 
-            .main-box__button {
+            .footer-main-box__button {
                 display: inline-block;
                 border-radius: 1000px;
-                background: #7510f7;
+                background: $purple;
                 font-family: "Rubik", "Arial", sans-serif;
                 font-weight: 400;
                 color: #fff;
                 font-size: 1.65rem;
                 padding: 18px 36px;
-                margin-top: 20px;
+                margin-top: 40px;
                 transition: 0.4s ease-in-out all;
 
                 &:hover {
@@ -57,21 +58,27 @@ $secondary-color: #ababab;
                 }
             }
         }
-        .main-box__right-side {
+        .footer-main-box__right-side {
             flex: 1 1 0px;
+            color: #ababab;
+            padding: 30px;
 
-            max-width: 425px;
-            .overlap-img {
-                background: #111215;
-                border-radius: 8px;
-                text-align: center;
+            li {
+                font-size: 1.4rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1.25px;
+                margin-left: 25px;
+                margin-bottom: 20px;
 
-                img {
-                    position: relative;
-                    top: 40px;
-                    border-radius: 6px;
+                span {
+                    margin-left: 10px;
                 }
             }
         }
+    }
+    .footer-last-box {
+        height: 80px;
+        border-top: 2px solid white;
     }
 }

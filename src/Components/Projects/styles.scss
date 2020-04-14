@@ -1,0 +1,38 @@
+$header-color: #919191;
+.project-container {
+    margin: 20px 70px;
+    height: 50vh;
+    margin-bottom: 150px;
+
+    h2 {
+        color: $header-color;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1.25px;
+    }
+
+    .project-grid {
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+        .project-card {
+            display: flex;
+            padding: 10px 6px;
+            margin: 25px 10px;
+            .img-box {
+                flex: 1;
+                img {
+                    border-radius: 8px;
+                }
+            }
+
+            .description-box {
+                flex: 2;
+                p {
+                    color: $header-color;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
