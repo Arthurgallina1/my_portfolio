@@ -4,6 +4,7 @@ import MainSection from "./Components/MainSection";
 import Project from "./Components/Projects";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
+import Copyright from "./Components/Copyright";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <Project />
             <About />
             <Footer />
+            <Copyright />
         </div>
     );
 }
