@@ -1,0 +1,38 @@
+.Header {
+  display: grid;
+  grid-template-areas: "logo nav";
+  background: #191a1d;
+
+  transition: all 1.5s linear;
+}
+
+.Nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+button {
+  background: transparent;
+}
+
+.Burguer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    grid-template-areas: "logo burger" "nav nav";
+  }
+
+  .Nav {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: none;
+    grid-row-gap: 20px;
+  }
+  .Burguer {
+    display: inline;
+  }
+}
