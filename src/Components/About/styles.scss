@@ -4,101 +4,101 @@ $bg-color: #191a1d;
 $text-color: white;
 
 .about-container {
-    text-align: center;
-    display: center;
-    justify-content: center;
-    // background-color: $roxo;
-    background-image: url("../../assets/bgabout.png");
-    background-size: cover;
+  text-align: center;
+  display: center;
+  justify-content: center;
+  // background-color: $roxo;
+  background-image: url("../../assets/bgabout.png");
+  background-size: cover;
+  color: $text-color;
+  // height: 75vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+
+  h1 {
     color: $text-color;
-    // height: 75vh;
-    padding: 20px;
+    margin-top: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    margin-bottom: 20px;
+  }
+
+  .about-box {
+    text-align: center;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 40px;
+
+    img {
+      // border-radius: 50%;
+      //   border: 10px solid rgba(255, 255, 255, 0.8);
+      margin-bottom: 30px;
+    }
+  }
+
+  .section-skills {
+    background: $text-color;
+    color: #141c3a;
+    width: 80%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+    border-radius: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 
-    h1 {
-        color: $text-color;
-        margin-top: 35px;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 1.25px;
-        margin-bottom: 20px;
+    .front-col {
+      padding: 35px;
     }
-
-    .about-box {
-        text-align: center;
-        max-width: 600px;
-        padding: 10px;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1.5;
-        margin-bottom: 40px;
-
-        img {
-            border-radius: 50%;
-            border: 10px solid rgba(255, 255, 255, 0.8);
-            margin-bottom: 30px;
-        }
+    h2 {
+      font-weight: 700;
+      margin-bottom: 8px;
     }
-
-    .section-skills {
-        background: $text-color;
-        color: #141c3a;
-        width: 80%;
-        display: flex;
-        border-radius: 10px;
-        justify-content: space-evenly;
-        margin-bottom: 50px;
-
-        .front-col {
-            padding: 35px;
-        }
-        h2 {
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        hr {
-            height: 3px;
-            width: 50px;
-            border: 1px solid black;
-        }
-        p {
-            font-weight: 100;
-            line-height: 1.6;
-            font-size: 1.1rem;
-            padding-bottom: 10px;
-            margin-bottom: 12px;
-        }
-        li {
-            font-weight: 200;
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.6;
-        }
+    hr {
+      height: 3px;
+      width: 50px;
+      border: 1px solid black;
     }
+    p {
+      font-weight: 100;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
+    li {
+      font-weight: 200;
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    .about-box {
+  .about-box {
+  }
+  .section-skills {
+    flex-direction: column;
+    padding: 5px 5px 25px 5px;
+
+    .front-col {
+      padding: 20px 0 0 0 !important;
+      margin-bottom: 33px;
+
+      p {
+        margin-bottom: 0;
+      }
     }
-    .section-skills {
-        flex-direction: column;
-        padding: 5px 5px 25px 5px;
+  }
 
-        .front-col {
-            padding: 20px 0 0 0 !important;
-            margin-bottom: 33px;
-
-            p {
-                margin-bottom: 0;
-            }
-        }
-    }
-
-    //   .front-col {
-    //     display: flex;
-    //   }
+  //   .front-col {
+  //     display: flex;
+  //   }
 }

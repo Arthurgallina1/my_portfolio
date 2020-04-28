@@ -32,11 +32,11 @@ export default function Navbar() {
     <header className="Header">
       <img src={logo} alt="" height={50} />
       {(!isSmallScreen || visible) && (
-        <nav className="Nav">
-          <a href="/">About</a>
-          <a href="/">Projects</a>
-          <a href="/">Contact</a>
-        </nav>
+        <ul className="Nav">
+          <li className="nav__item">About</li>
+          <li className="nav__item">Projects</li>
+          <li className="nav__item">Contact</li>
+        </ul>
       )}
       <button onClick={toggleNav}>
         {visible ? (

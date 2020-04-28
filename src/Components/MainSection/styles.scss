@@ -2,7 +2,7 @@ $bg-color: #191a1d;
 $secondary-color: #ababab;
 
 .container {
-  height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,9 +59,10 @@ $secondary-color: #ababab;
     }
     .main-box__right-side {
       flex: 1 1 0px;
-
       max-width: 425px;
+
       .overlap-img {
+        min-width: 375px;
         background: #111215;
         border-radius: 8px;
         text-align: center;
@@ -78,8 +79,8 @@ $secondary-color: #ababab;
 
 @media (max-width: 768px) {
   .container {
-    height: 110vh;
-    padding: 15px 15px 100px 15px;
+    // height: 100vh;
+    padding: 25px 15px 180px 15px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
 
     .main-box {
@@ -107,6 +108,9 @@ $secondary-color: #ababab;
       .main-box__right-side {
         // padding: 0 0 0 0;
         margin-bottom: 0px;
+        .overlap-img {
+          min-width: 310px;
+        }
         img {
           width: 300px;
           top: 20px;

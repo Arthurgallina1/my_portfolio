@@ -9,7 +9,7 @@ export default function MainSection() {
         <div className="main-box__left-side">
           <h1>Hey, I'm Arthur.</h1>
           <h2>
-            Software engineer from Florianópolis, Brasil.
+            Software engineer from Florianópolis, Brazil.
             <br /> I create custom solutions to <strong>help</strong>
             <br />
             businesses do better online.
