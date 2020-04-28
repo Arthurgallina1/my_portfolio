@@ -1,60 +1,81 @@
 $primary-color: #6d10ff;
 
+.NavAnimation-enter {
+    opacity: 0;
+    transform: scale(0, 5);
+}
+
+.NavAnimation-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 350ms, transform 350ms;
+}
+
+.NavAnimation-exit {
+    opacity: 1;
+}
+
+.NavAnimation-exit-active {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 350ms, transform 350ms;
+}
+
 .Header {
-  display: grid;
-  grid-template-areas: "logo nav";
-  background: #191a1d;
-  padding: 8px 85px;
-  min-height: 80px;
-  transition: all 1.5s linear;
+    display: grid;
+    grid-template-areas: "logo nav";
+    background: #191a1d;
+    padding: 8px 85px;
+    min-height: 80px;
+    transition: all 1.5s linear;
 }
 
 .Nav {
-  grid-area: nav;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  align-items: center;
-  justify-items: center;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
 
-  .nav__item {
-    color: #ababab;
-    font-size: 20px;
-    padding: 8px 16px;
-    display: inline-block;
-    border-bottom: 3px solid transparent;
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
+    .nav__item {
+        color: #ababab;
+        font-size: 20px;
+        padding: 8px 16px;
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
 
-    &:hover {
-      border-bottom: 3px solid $primary-color;
-      color: white;
+        &:hover {
+            border-bottom: 3px solid $primary-color;
+            color: white;
+        }
     }
-  }
 }
 
 button {
-  background: transparent;
-  svg {
-    float: right;
-  }
+    background: transparent;
+    svg {
+        float: right;
+    }
 }
 
 .Burguer {
-  display: none;
+    display: none;
 }
 
 @media (max-width: 768px) {
-  .Header {
-    grid-template-areas: "logo burger" "nav nav";
-    padding: 8px 45px;
-  }
+    .Header {
+        grid-template-areas: "logo burger" "nav nav";
+        padding: 8px 45px;
+    }
 
-  .Nav {
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: none;
-    grid-row-gap: 20px;
-  }
-  .Burguer {
-    display: inline;
-  }
+    .Nav {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: none;
+        grid-row-gap: 20px;
+    }
+    .Burguer {
+        display: inline;
+    }
 }
