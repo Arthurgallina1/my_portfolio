@@ -35,7 +35,7 @@ export default function Projects() {
                         />
                     </div>
                     <div className='description-box'>
-                        <a href='/'>Rate</a>
+                        <a href='/'>Covid Tracker</a>
                         <p className='text-large'>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Quos, distinctio?
@@ -55,7 +55,7 @@ export default function Projects() {
                         />
                     </div>
                     <div className='description-box'>
-                        <a href='/'>Rate</a>
+                        <a href='/'>Go Barber</a>
                         <p className='text-large'>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Quos, distinctio?
