@@ -9,8 +9,7 @@ export default function Projects() {
                 <div className='project-card'>
                     <div className='img-box'>
                         <img
-                            src=' https://api.adorable.io/avatars/250/abott@adorable.png
-'
+                            src=' https://api.adorable.io/avatars/250/abott@adorable.png'
                             alt=''
                         />
                     </div>
@@ -29,8 +28,7 @@ export default function Projects() {
                 <div className='project-card'>
                     <div className='img-box'>
                         <img
-                            src=' https://api.adorable.io/avatars/250/abott@adorable.png
-'
+                            src=' https://api.adorable.io/avatars/250/abott@adorable.png'
                             alt=''
                         />
                     </div>
@@ -49,8 +47,7 @@ export default function Projects() {
                 <div className='project-card'>
                     <div className='img-box'>
                         <img
-                            src=' https://api.adorable.io/avatars/250/abott@adorable.png
-'
+                            src=' https://api.adorable.io/avatars/250/abott@adorable.png'
                             alt=''
                         />
                     </div>

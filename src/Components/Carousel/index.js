@@ -1,21 +1,71 @@
-import React from "react";
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import React, { useState, useEffect } from "react";
+import Slider from "infinite-react-carousel";
+import { MdCode } from "react-icons/md";
+import { FiDatabase } from "react-icons/fi";
+import { GoTools } from "react-icons/go";
+import "./index.scss";
 
 export default function Carousel() {
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 768px)");
+        mediaQuery.addListener(handleMediaQueryChange);
+        handleMediaQueryChange(mediaQuery);
+
+        return () => {
+            mediaQuery.removeListener(handleMediaQueryChange);
+        };
+    }, []);
+
+    const settings = {
+        autoplay: true,
+        dots: true,
+    };
+
+    const handleMediaQueryChange = (mediaQuery) => {
+        if (mediaQuery.matches) {
+            // setIsSmallScreen(true);
+        } else {
+            // setIsSmallScreen(true);
+        }
+    };
+
     return (
-        <Carousel>
-            <div>
-                <img src='assets/1.jpeg' />
-                <p className='legend'>Legend 1</p>
+        <Slider {...settings}>
+            <div className='front-col'>
+                <MdCode size={44} color={"#7510f7"} />
+                <h2>Front-end</h2>
+                <p>I enjoy building elegant applications.</p>
+                <ul>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>CSS/SASS</li>
+                </ul>
             </div>
-            <div>
-                <img src='assets/2.jpeg' />
-                <p className='legend'>Legend 2</p>
+            <div className='front-col'>
+                <FiDatabase size={44} color={"#7510f7"} />
+                <h2>Back-end</h2>
+                <p>A robust backend is essential.</p>
+
+                <ul>
+                    <li>Node.js</li>
+                    <li>PHP</li>
+                    <li>Postgres</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
             </div>
-            <div>
-                <img src='assets/3.jpeg' />
-                <p className='legend'>Legend 3</p>
+            <div className='front-col'>
+                <GoTools size={44} color={"#7510f7"} />
+                <h2>Tools</h2>
+                <p>Tools that help get the job done.</p>
+                <ul>
+                    <li>Git</li>
+                    <li>AWS</li>
+                    <li>Heroku</li>
+                </ul>
             </div>
-        </Carousel>
+        </Slider>
     );
 }
