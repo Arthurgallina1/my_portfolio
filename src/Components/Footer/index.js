@@ -4,7 +4,7 @@ import { FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <div className='footer-container'>
+        <div className='footer-container' id='contact'>
             <div className='msg-box'>
                 <h3>Let's Work Together</h3>
                 <h4>Have a project you'd like to discuss?</h4>
@@ -21,15 +21,15 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href='/'>
+                        <a href='https://www.linkedin.com/in/arthur-gallina-086768b0/'>
                             <FaLinkedin size={24} color={"#7510f7"} />
                             <span>LinkedIn</span>
                         </a>
                     </li>
                     <li>
-                        <a href='/'>
+                        <a href='https://www.twitter.com/agallina_'>
                             <FaTwitter size={24} color={"#7510f7"} />
-                            <span>agallina10</span>
+                            <span>TWITTER</span>
                         </a>
                     </li>
                 </ul>

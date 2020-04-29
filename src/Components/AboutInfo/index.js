@@ -1,37 +1,11 @@
-import React, { useState, useEffect } from "react";
-import Slider from "infinite-react-carousel";
+import React from "react";
 import { MdCode } from "react-icons/md";
 import { FiDatabase } from "react-icons/fi";
 import { GoTools } from "react-icons/go";
-import "./index.scss";
 
-export default function Carousel() {
-    // const [isSmallScreen, setIsSmallScreen] = useState(false);
-    const settings = {
-        autoplay: true,
-        dots: true,
-    };
-
-    // useEffect(() => {
-    //     const mediaQuery = window.matchMedia("(max-width: 768px)");
-    //     mediaQuery.addListener(handleMediaQueryChange);
-    //     handleMediaQueryChange(mediaQuery);
-
-    //     return () => {
-    //         mediaQuery.removeListener(handleMediaQueryChange);
-    //     };
-    // }, []);
-
-    // const handleMediaQueryChange = (mediaQuery) => {
-    //     if (mediaQuery.matches) {
-    //         // setIsSmallScreen(true);
-    //     } else {
-    //         // setIsSmallScreen(true);
-    //     }
-    // };
-
+export default function AboutInfo() {
     return (
-        <Slider {...settings}>
+        <>
             <div className='front-col'>
                 <MdCode size={44} color={"#7510f7"} />
                 <h2>Front-end</h2>
@@ -40,6 +14,7 @@ export default function Carousel() {
                     <li>Javascript</li>
                     <li>React</li>
                     <li>Redux</li>
+                    <li>React Native</li>
                     <li>CSS/SASS</li>
                 </ul>
             </div>
@@ -50,7 +25,7 @@ export default function Carousel() {
 
                 <ul>
                     <li>Node.js</li>
-                    <li>PHP</li>
+                    <li>Python</li>
                     <li>Postgres</li>
                     <li>MySQL</li>
                     <li>MongoDB</li>
@@ -62,10 +37,11 @@ export default function Carousel() {
                 <p>Tools that help get the job done.</p>
                 <ul>
                     <li>Git</li>
+                    <li>Docker</li>
                     <li>AWS</li>
                     <li>Heroku</li>
                 </ul>
             </div>
-        </Slider>
+        </>
     );
 }

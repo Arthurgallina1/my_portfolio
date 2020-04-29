@@ -7,8 +7,9 @@ $text-color: white;
     text-align: center;
     display: center;
     justify-content: center;
-    // background-color: $roxo;
-    background-image: url("../../assets/bgabout.png");
+    background-color: $roxo;
+    // background-image: url("../../assets/bgabout.png");
+
     background-size: cover;
     color: $text-color;
     // height: 75vh;
@@ -26,6 +27,11 @@ $text-color: white;
         text-transform: uppercase;
         letter-spacing: 1.25px;
         margin-bottom: 20px;
+    }
+
+    h2 {
+        color: $roxo;
+        text-align: center;
     }
 
     .about-box {
