@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Slider from "infinite-react-carousel";
 import { MdCode } from "react-icons/md";
 import { FiDatabase } from "react-icons/fi";

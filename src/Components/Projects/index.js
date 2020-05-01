@@ -55,13 +55,15 @@ export default function Projects() {
                             />
                         </div>
                         <div className='description-box'>
-                            <a href='/'>Go Barber</a>
+                            <a href='/'>Tindev</a>
                             <p className='text-large'>
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Quos, distinctio?
                             </p>
                             <br />
-                            <span>Stack: bla bla bla </span>
+                            <span>
+                                Stack: React, React Native, Node.js, MongoDB.{" "}
+                            </span>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../logo.svg";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";

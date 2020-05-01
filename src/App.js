@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Components/Header";
 import MainSection from "./Components/MainSection";
 import Project from "./Components/Projects";
 import Navbar from "./Components/Navbar";
@@ -9,16 +8,16 @@ import Copyright from "./Components/Copyright";
 import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <MainSection />
-      <Project />
-      <About />
-      <Footer />
-      <Copyright />
-    </div>
-  );
+    return (
+        <div className='App'>
+            <Navbar />
+            <MainSection />
+            <Project />
+            <About />
+            <Footer />
+            <Copyright />
+        </div>
+    );
 }
 
 export default App;
